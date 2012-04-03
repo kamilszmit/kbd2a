@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">8a9a2fa0-a2cd-4381-90d1-be7d6c9e4e2a</identifier>
+  </ID>
+  <name>POZYCJA</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">9ec96d97-cb4f-4d9e-ba98-eeb438af77c9</identifier>
+      </ID>
+      <name>ID_POZYCJI</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">14f2b4fd-85d3-4f2b-ac21-91d3e9cec18b</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">6</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">c310216a-a1d2-4ff9-99e8-b6a3ba0fd7a2</identifier>
+      </ID>
+      <name>POZYCJE_ZAMOWIENIE_FK1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>ID_POZYCJI</name>
+          <identifier class="java.lang.String">9ec96d97-cb4f-4d9e-ba98-eeb438af77c9</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>POZYCJE</name>
+            <identifier class="java.lang.String">8a9a2fa0-a2cd-4381-90d1-be7d6c9e4e2a</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>ZAMOWIENIE_PK</name>
+        <identifier class="java.lang.String">92ebb2d2-dd86-4c8e-ad8b-274209e95169</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>ZAMOWIENIE</name>
+          <identifier class="java.lang.String">42faff76-d046-49e2-8f50-e804ddf64a95</identifier>
+          <schemaName>SCHEMA1</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCHEMA1</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+  </constraints>
+  <properties>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SCHEMA1</name>
+  </schema>
+</table>

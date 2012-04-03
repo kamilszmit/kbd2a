@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProviderSettings xmlns="http://xmlns.oracle.com/ide/hash">
+   <hash n="dataTypeSettings">
+      <value n="sourceKey" v="oracle.javatools.db.ora.Oracle11gR2"/>
+   </hash>
+   <value n="id" v="8c7b1880-0910-4e45-b0ff-cf5a23caa6a0"/>
+   <value n="name" v="DATABASE1"/>
+</ProviderSettings>
