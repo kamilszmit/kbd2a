@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">30a783eb-d09c-46b7-ae04-7040cc95ec15</identifier>
+  </ID>
+  <name>PRODUKT</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">69453803-e65a-4456-a722-009c888db5c3</identifier>
+      </ID>
+      <name>ID_PRODUKTU</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">2c5a360b-1054-4952-8ce7-907b37144b1c</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">6</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">7cc8e848-9641-4082-930d-edc8177f4f82</identifier>
+      </ID>
+      <name>PRODUKT_KATEGORIA_FK1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>ID_PRODUKTU</name>
+          <identifier class="java.lang.String">69453803-e65a-4456-a722-009c888db5c3</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>PRODUKT</name>
+            <identifier class="java.lang.String">30a783eb-d09c-46b7-ae04-7040cc95ec15</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>KATEGORIA_PK</name>
+        <identifier class="java.lang.String">fab4141d-8e49-4cc4-8fe0-4ec818b7afe6</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>KATEGORIA</name>
+          <identifier class="java.lang.String">ec2406e1-1045-466f-b935-4db45d921916</identifier>
+          <schemaName>SCHEMA1</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCHEMA1</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">f9772daa-e9b5-44a1-8452-a045277c1224</identifier>
+      </ID>
+      <name>PRODUKT_PRODUCENT_FK1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>ID_PRODUKTU</name>
+          <identifier class="java.lang.String">69453803-e65a-4456-a722-009c888db5c3</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>PRODUKT</name>
+            <identifier class="java.lang.String">30a783eb-d09c-46b7-ae04-7040cc95ec15</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>PRODUCENT_PK</name>
+        <identifier class="java.lang.String">56ea40b3-bd8a-4d77-b92d-b72c4ff3544b</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>PRODUCENT</name>
+          <identifier class="java.lang.String">7ab6bec7-4bb2-461a-81b5-fd43f31f7ba1</identifier>
+          <schemaName>SCHEMA1</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCHEMA1</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">0c4d26c9-5411-4b4c-ad40-06a7ae39489c</identifier>
+      </ID>
+      <name>PRODUKT_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>ID_PRODUKTU</name>
+          <identifier class="java.lang.String">69453803-e65a-4456-a722-009c888db5c3</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>PRODUKT</name>
+            <identifier class="java.lang.String">30a783eb-d09c-46b7-ae04-7040cc95ec15</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>PRODUKT_PK</name>
+        <identifier class="java.lang.String">0c3f3e3f-f9d3-47b6-bcbb-c95fa2c2c90a</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>PRODUKT</name>
+          <identifier class="java.lang.String">30a783eb-d09c-46b7-ae04-7040cc95ec15</identifier>
+          <schemaName>SCHEMA1</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCHEMA1</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">0c3f3e3f-f9d3-47b6-bcbb-c95fa2c2c90a</identifier>
+      </ID>
+      <name>PRODUKT_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">ffdad55b-6023-419f-ae9b-2911ebffce87</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">758e07dc-4d92-49f8-93ad-faa4a52d69a5</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>ID_PRODUKTU</name>
+              <identifier class="java.lang.String">69453803-e65a-4456-a722-009c888db5c3</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>PRODUKT</name>
+                <identifier class="java.lang.String">30a783eb-d09c-46b7-ae04-7040cc95ec15</identifier>
+                <schemaName>SCHEMA1</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>SCHEMA1</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SCHEMA1</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SCHEMA1</name>
+  </schema>
+</table>
